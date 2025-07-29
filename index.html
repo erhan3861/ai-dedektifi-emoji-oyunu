@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kavram Oyunu</title>
+  <title>AI Dedektif Oyunu</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -146,7 +146,7 @@
 <!-- Başlangıç Ekranı -->
 <div id="startScreen">
   <div class="introCard">
-    <h1>🧠 Kodlama Kavramları</h1>
+    <h1>🧠 AI Dedektif Oyunu</h1>
     <div style="font-size: 48px;">📦 🌳 🔁</div>
     <p><strong>Değişken:</strong> Bilgiyi saklar.</p>
     <p><strong>Koşul:</strong> Karar verir.</p>
@@ -181,9 +181,25 @@
   const wrongSound = document.getElementById("wrongSound");
 
   const concepts = [
-    { name: "Değişken", emojis: ["📦", "👜", "🎒", "📁", "🧺"], key: "degisken" },
-    { name: "Koşul", emojis: ["🌳", "🪧", "🛣️", "🔀", "🚦"], key: "kosul" },
-    { name: "Döngü", emojis: ["🪥", "⏰", "🔁", "♻️", "🌀"], key: "dongu" }
+    { name: "AI Bulunan Nesneler", emojis: [ 
+  "📱", // Akıllı telefon
+  "📷", // Akıllı kamera
+  "🤖", // Robot
+  "🛰️", // Uydu
+  "🚗", // Otonom araç
+  "💬", // AI sohbet balonu
+  "🕹️", // Akıllı oyun konsolu], key: "AI" },
+      
+    { name: "AI Bulunmayan Nesneler", emojis: ["🧺", // Sepet
+  "🪑", // Sandalye
+  "🖍️", // Pastel boya
+  "🪣", // Kova
+  "🎸", // Gitar
+  "🔧", // Anahtar
+  "🪵", // Odun
+  "🍎", // Elma
+  "🧦", // Çorap
+  "🧃"  // Meyve suyu kutusu], key: "not_AI" }
   ];
 
   let currentConcept = concepts[0];
